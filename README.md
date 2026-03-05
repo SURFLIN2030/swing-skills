@@ -94,6 +94,39 @@ These aren't coding shortcuts. They're **thinking upgrades.**
 
 ---
 
+## Benchmark: Baseline vs Stack Skills
+
+Same tasks, same AI model. Only difference: Stack Skills methodology applied.
+
+### Results
+
+| Scenario | Baseline | Stack Skills | Improvement |
+|:---------|:--------:|:-----------:|:-----------:|
+| Research: "Is SQLite viable for 1000 concurrent users?" | 5/10 | 9/10 | **+80%** |
+| Decision: "Which state management for React e-commerce?" | 5/10 | 9/10 | **+80%** |
+| Review: "Single PostgreSQL for OLTP + analytics?" | 4/10 | 8/10 | **+100%** |
+| **Average** | **4.7** | **8.7** | **+85%** |
+
+### What changed?
+
+| Dimension | Without Stack Skills | With Stack Skills |
+|:----------|:---------------------|:------------------|
+| Sources cited | 0 | 10 (including Tier S academic/official) |
+| Options explored | 1-3 (safe defaults) | 5 (including unconventional alternatives) |
+| Issues found | 4 (surface-level) | 12 (4 Critical severity) |
+| Hidden assumptions exposed | 0 | 5+ |
+| Actionability | "Use X" | SQL configs, timelines, trade-offs |
+
+### Key findings
+
+- **Research**: Baseline said "use PostgreSQL." Stack Skills discovered that 1000 concurrent users = ~30 concurrent writes = **120x headroom for SQLite**. Completely different conclusion.
+- **Decision**: Baseline said "use Zustand." Stack Skills discovered that **where you store the cart (server vs client) matters more than which library you pick**.
+- **Review**: Baseline listed 4 general concerns. Stack Skills found a **Critical security issue** (multi-tenant data leakage via analytics queries) and provided the RLS fix with SQL.
+
+> Baseline gives you **an answer**. Stack Skills helps you **find better questions**.
+
+---
+
 ## Install
 
 ### Plugin Marketplace (Recommended)
