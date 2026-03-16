@@ -274,6 +274,7 @@ When reviewing pull requests:
 
 ## Integration Notes
 
+- **With scope-clarifier:** Run scope-clarifier first on ambiguous requests before invoking this skill. Clarified scope produces better results.
 - **With creativity-sampler:** After adversarial review reveals problems, use creativity-sampler to generate alternative approaches
 - **With cross-verified-research:** Use research to verify claims made during review (e.g., "is this really a security risk?"). For a full-rigor workflow: `cross-verified-research` → `adversarial-review`
 - **With deep-dive-analyzer:** For understanding before challenging: `deep-dive-analyzer` (understand) → `adversarial-review` (challenge). This skill focuses on finding flaws; deep-dive focuses on neutral exhaustive analysis.

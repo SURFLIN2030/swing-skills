@@ -192,3 +192,4 @@ Why this is better:
 - **With adversarial-review:** Clarified scope → review against actual requirements (prevents reviewing against assumed requirements)
 - **With creativity-sampler:** Clarified constraints → better option generation (constraints define what's conventional vs unconventional)
 - **With pre-mortem:** Clarified assumptions → more specific failure scenarios
+- **With reasoning-tracer:** Clarified scope → clearer claim isolation in Stage 1 (fewer ambiguous assumptions to trace)

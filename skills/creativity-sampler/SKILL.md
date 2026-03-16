@@ -207,6 +207,7 @@ Why this is better:
 
 ## Integration Notes
 
+- **With scope-clarifier:** Run scope-clarifier first on ambiguous requests before invoking this skill. Clarified scope produces better results.
 - **With brainstorming:** Can replace the "Propose 2-3 approaches" phase with deeper divergent options
 - **With adversarial-review:** Feed the chosen option into adversarial review for stress-testing
 - **Standalone:** Invoke directly with `/creativity-sampler [question]` for quick decision support

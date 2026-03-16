@@ -343,6 +343,7 @@ but heavily weighted)
 
 ## Integration Notes
 
+- **With scope-clarifier:** Run scope-clarifier first on ambiguous requests before invoking this skill. Clarified scope produces better results.
 - **Before adversarial-review:** Trace your reasoning first, then stress-test it. The assumption inventory from reasoning-tracer feeds directly into adversarial-review's attack vectors.
 - **After cross-verified-research:** Research gathers verified facts; reasoning-tracer then makes the *logic connecting those facts to a conclusion* transparent.
 - **With creativity-sampler:** When creativity-sampler generates options, reasoning-tracer can trace why one option was selected over others.

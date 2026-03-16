@@ -265,6 +265,7 @@ Classify every source on discovery.
 
 ## Integration Notes
 
+- **With scope-clarifier:** Run scope-clarifier first on ambiguous requests before invoking this skill. Clarified scope produces better results.
 - **With brainstorming:** Can be invoked during brainstorming's "Explore context" phase for fact-based inputs
 - **With search-first:** search-first finds tools/libraries to USE; this skill VERIFIES factual claims. Different purposes.
 - **With adversarial-review:** Research findings can feed into adversarial review for stress-testing conclusions

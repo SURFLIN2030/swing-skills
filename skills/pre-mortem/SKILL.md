@@ -400,6 +400,7 @@ before any projected traffic event exceeding 3x baseline.
 
 ## Integration Notes
 
+- **With scope-clarifier:** Run scope-clarifier first on ambiguous requests before invoking this skill. Clarified scope produces better results.
 - **With adversarial-review:** Complementary, not overlapping. Run `pre-mortem` first to anticipate future risks, then `adversarial-review` on the current implementation to find existing flaws. Together they cover temporal risk: future (pre-mortem) + present (adversarial).
 - **With cross-verified-research:** When a pre-mortem scenario depends on uncertain facts (e.g., "will Kafka handle this load?"), invoke `cross-verified-research` to verify the factual basis before rating likelihood.
 - **With creativity-sampler:** After pre-mortem reveals high-priority risks, use `creativity-sampler` to generate alternative approaches that avoid the top failure modes entirely.
