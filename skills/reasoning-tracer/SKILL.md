@@ -1,7 +1,7 @@
 ---
 name: reasoning-tracer
-description: Exposes Claude's reasoning chain as an auditable, decomposable artifact. Forces assumption inventories, decision branching, confidence decomposition, and weakest-link analysis instead of opaque conclusions. Use when the user needs to see WHY a conclusion was reached, what alternatives were considered, and where the reasoning is most fragile. Triggers on "왜 그렇게 생각해", "reasoning", "근거", "show your work", "어떻게 그 결론이", "trace", "판단 근거", "why do you think that".
-argument-hint: "[question, decision, recommendation, or estimate to trace]"
+description: Exposes Claude's reasoning chain as an auditable, decomposable artifact. Quick mode (default) gives assumption inventory + weakest-link in 2 stages. Full mode (--full) adds decision branching, confidence decomposition, and falsification conditions. Triggers on "왜 그렇게 생각해", "reasoning", "근거", "show your work", "어떻게 그 결론이", "trace", "판단 근거", "why do you think that".
+argument-hint: "[question to trace] [--full for complete 5-stage analysis]"
 allowed-tools: Read, Grep, Glob, Bash, Agent
 ---
 
@@ -21,6 +21,41 @@ Anti-black-box engine that makes reasoning chains visible, auditable, and decomp
 5. **No confidence theater.** Do not assign high confidence (>80%) without specific justification. Vague appeals to "experience" or "common knowledge" are banned. Every confidence level must cite a concrete basis.
 6. **Distinguish evidence types.** Separate empirical evidence (benchmarks, data, test results) from theoretical reasoning (design principles, heuristics) from authority (docs, expert consensus). Label which type supports each claim.
 7. **Trace must be falsifiable.** Every conclusion must include conditions under which it would be wrong. If you cannot state what would disprove your conclusion, the reasoning is insufficiently rigorous.
+
+
+## Mode Selection
+
+### Quick Mode (Default)
+When invoked without `--full`, execute only:
+1. **Stage 1: Claim Isolation** — break into atomic claims
+2. **Stage 2: Assumption Inventory** — enumerate assumptions with criticality/verifiability
+3. **Stage 5: Weakest Link & Alternative Conclusion** — identify the single most fragile assumption
+
+Skip Stages 3 (Decision Tree) and 4 (Confidence Decomposition).
+
+Quick mode output format:
+
+```markdown
+## Reasoning Trace: [Claim]
+
+### Atomic Claims
+1. [Claim 1]
+2. [Claim 2]
+
+### Assumption Inventory
+| # | Assumption | Criticality | Verifiability |
+|---|-----------|-------------|---------------|
+| A1 | ... | High/Med/Low | Direct/Indirect/Unverifiable |
+
+### Weakest Link
+**Assumption [A#]:** [restate]
+- **Why weakest:** [explanation]
+- **If wrong:** [alternative conclusion]
+- **How to verify:** [concrete steps]
+```
+
+### Full Mode (--full)
+When invoked with `--full`, execute all 5 stages as documented below.
 
 
 ## Process
