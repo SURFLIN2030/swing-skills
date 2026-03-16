@@ -21,6 +21,10 @@
   <a href="README.md">English</a> · <a href="README.ko.md">한국어 (Korean)</a>
 </p>
 
+<p align="center">
+  <img src="assets/swing-hero-terminal.png" width="800" alt="Swing terminal installation">
+</p>
+
 **Your AI is not swinging at all.**
 
 It picks the safe default, agrees when it should push back, cites no sources, hides its reasoning, and assumes everything will work. Six cognitive failures. Six firewalls. Make it swing.

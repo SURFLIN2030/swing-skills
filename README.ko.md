@@ -21,6 +21,10 @@
   <a href="README.md">English</a> · <a href="README.ko.md">한국어 (Korean)</a>
 </p>
 
+<p align="center">
+  <img src="assets/swing-hero-terminal.png" width="800" alt="Swing 터미널 설치 화면">
+</p>
+
 **너의 AI는 전혀 swing 하고 있지 않아.**
 
 안전한 기본값만 고르고, 반박 대신 동의하고, 출처를 밝히지 않고, 추론을 숨기고, 모든 게 잘 될 거라 가정한다. 여섯 가지 인지 실패. 여섯 개의 방화벽. Make it swing.
