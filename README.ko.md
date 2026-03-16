@@ -1,4 +1,8 @@
-# Swing
+<p align="center">
+  <img src="assets/swing-icon.svg" width="80" alt="Swing logo">
+</p>
+
+<h1 align="center">Swing</h1>
 
 <p align="right">
   <a href="README.md">English</a> · <a href="README.ko.md">한국어 (Korean)</a>
